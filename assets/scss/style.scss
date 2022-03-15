@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=League+Gothic&display=swap");
+
+@font-face {
+  font-family: "LMS-Egyptian-Bookends";
+  src: url("/assets/fonts/LMS-Egyptian-Bookends.ttf.woff") format("woff"),
+    url("/assets/fonts/LMS-Egyptian-Bookends.ttf.svg#LMS-Egyptian-Bookends") format("svg"),
+    url("/assets/fonts/LMS-Egyptian-Bookends.ttf.eot"),
+    url("assets/fonts/LMS-Egyptian-Bookends.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "cairo";
+}
+
+:root {
+  --primary-color: #daa520;
+  --primary-dark: #1c1c1c;
+  --primary-light: #ffffff;
+  --special-font: "";
+}
+.fancy-bg {
+  &-light {
+    background-image: url("../imgs/bg.png");
+    display: block;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  &-dark {
+    background: url("../imgs/dark-bg.png");
+    display: block;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+}
+
+header {
+  &.fancy-egyptian-font {
+    font-family: "LMS-Egyptian-Bookends";
+    font-size: 80px;
+    float: left;
+    display: inline;
+    letter-spacing: 10px;
+    line-height: 100px;
+  }
+}
+.primary {
+  color: var(--primary-color);
+}
+.dark {
+  color: var(--primary-dark);
+}
+.light {
+  color: var(--primary-light);
+}
+.light-bg {
+  background: var(--primary-light);
+}
+.dark-bg {
+  background-color: var(--primary-dark);
+}
+
+.text {
+  font-family: "Cairo", sans-serif;
+}
+
+#sub-header {
+  color: #f4f4f4;
+  font-size: 16px;
+}
+#profile-image {
+  img {
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 0px solid var(--primary-light);
+    border-radius: 25px;
+    max-height: 600px;
+    height: 80%;
+    margin-bottom: 16px;
+  }
+  .btn {
+    background-color: var(--primary-dark);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: none;
+    outline: none;
+  }
+}
